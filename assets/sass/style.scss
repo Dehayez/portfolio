@@ -62,12 +62,12 @@ $grey: #8D8D8D;
 		justify-content: space-around;
 
 		&-left {
-			font-size: 100px;
+			font-size: 60px;
 			font-family: 'Playfair Display', serif;
 			text-align: left;
 		}
 		&-right {
-			font-size: 100px;
+			font-size: 60px;
 			font-family: 'Playfair Display', serif;
 			text-align: right;
 		}
@@ -79,6 +79,7 @@ $grey: #8D8D8D;
 	&-left {
 		font-size: 22px;
 		font-weight: 700;
+		margin-bottom: 2rem;
 	}
 
 	&-right {
