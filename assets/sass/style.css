@@ -73,6 +73,43 @@
   text-align: right;
 }
 
+.segment-left {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.segment-right {
+  margin-bottom: 8rem;
+}
+
+.segment-right-text {
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+
+.segment-right-text.title {
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.segment-right-text.date {
+  color: #8D8D8D;
+  font-weight: 300;
+  margin: 0;
+}
+
+.segment-right-text.text {
+  font-weight: 300;
+}
+
+.skills {
+  font-size: 18px;
+  font-weight: 300;
+  list-style-type: none;
+  line-height: 3rem;
+  padding-left: 0;
+}
+
 /*
 * Responsive breakpoints
 */

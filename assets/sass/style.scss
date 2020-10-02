@@ -2,6 +2,8 @@
 * Variables
 */
 $black: #333333;
+$grey: #8D8D8D;
+
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
@@ -70,6 +72,44 @@ $black: #333333;
 			text-align: right;
 		}
 	}
+}
+
+.segment {
+
+	&-left {
+		font-size: 22px;
+		font-weight: 700;
+	}
+
+	&-right {
+		margin-bottom: 8rem;
+		&-text {
+			font-size: 18px;
+			margin-bottom: 2rem;
+			&.title {
+				font-weight: 700;
+				margin-right: 6px;
+			}
+
+			&.date {
+				color: $grey;
+				font-weight: 300;
+				margin: 0;
+			}
+
+			&.text {	
+				font-weight: 300;
+			}
+		}
+	}
+}
+
+.skills {
+	font-size: 18px;
+	font-weight: 300;
+	list-style-type: none;
+	line-height: 3rem;
+	padding-left: 0;
 }
 
 // Work
