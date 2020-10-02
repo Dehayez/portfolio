@@ -1,0 +1,136 @@
+/*
+* Variables
+*/
+$black: #333333;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+/*
+* Mixins
+*/
+
+/*
+* Global
+*/
+* {
+	/* font-family: 'Playfair Display', serif;*/
+	font-family: 'Yantramanav', sans-serif; 
+	color: $black;
+}
+
+/*
+* Styling
+*/
+
+// General
+.navbar {
+	&.navbar-expand-lg {
+		background-color: transparent !important;
+	}
+
+	&-toggler {
+		border: none !important;
+	}
+}
+
+.nav {
+	&-link {
+		font-size: 24px;
+		font-family: 'Playfair Display', serif;
+		text-align: center;
+	}
+}
+
+
+// About
+.header {
+	background-color: white;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-title {
+		width: 80vw;
+		height: 70vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		&-left {
+			font-size: 100px;
+			font-family: 'Playfair Display', serif;
+			text-align: left;
+		}
+		&-right {
+			font-size: 100px;
+			font-family: 'Playfair Display', serif;
+			text-align: right;
+		}
+	}
+}
+
+// Work
+
+
+/*
+* Responsive breakpoints
+*/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+	.navbar.navbar-expand-lg {
+		background-color: transparent !important;
+		padding: 2rem 8rem;
+	}
+
+	.nav-link {
+		margin-left: 1rem;
+	}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+	.header-title-left, .header-title-right  {
+		font-size: 40px;
+	}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+	.header-title-left, .header-title-right  {
+		font-size: 60px;
+	}
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+	.header-title-left, .header-title-right  {
+		font-size: 80px;
+	}
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+	.header-title-left, .header-title-right  {
+		font-size: 40px;
+	}
+}
