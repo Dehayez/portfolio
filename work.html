@@ -12,11 +12,23 @@
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css" integrity="sha512-8M8By+q+SldLyFJbybaHoAPD6g07xyOcscIOQEypDzBS+sTde5d6mlK2ANIZPnSyxZUqJfCNuaIvjBUi8/RS0w==" crossorigin="anonymous" />
+
+	<!-- favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./assets/images/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
 
 	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">Yentel</a>
+		<a class="navbar-brand" href="work.html">
+			<img class="navbar-logo" src="./assets/images/logo/logo.png" alt="Y">
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -32,17 +44,59 @@
 		</div>
 	</nav>
 
-	<div class="container-fluid header">
-		<div class="header-title">
-			<h1 class="header-title-left">DESIGNER</h1>
-			<h1 class="header-title-right">DEVELOPER</h1>
+	<div id="fullPage" class="sections">
+		<div class="section container-fluid header">
+			<div class="header-title">
+				<h1 class="header-title-left">DESIGNER</h1>
+				<h1 class="header-title-right">DEVELOPER</h1>
+			</div>
+		</div>
+
+		<div class="section project">
+			<img class="project-image" src="/assets/images/ecospin.png"></img>
+			<div class="project-text">
+				<h1 class="project-text-title">Ecospin</h1>
+				<p class="project-text-small">MERN Stack</p>
+			</div>
+		</div>
+
+		<div class="section project">
+			<img class="project-image" src="/assets/images/ecospin.png"></img>
+			<div class="project-text">
+				<h1 class="project-text-title">GOT </h1>
+				<p class="project-text-small">PHP / Laravel</p>
+			</div>
+		</div>
+
+		<div class="section project">
+			<img class="project-image" src="/assets/images/ecospin.png"></img>
+			<div class="project-text">
+				<h1 class="project-text-title">Ecospin</h1>
+				<p class="project-text-small">MERN Stack</p>
+			</div>
+		</div>
+
+		<div class="section project">
+			<img class="project-image" src="/assets/images/ecospin.png"></img>
+			<div class="project-text">
+				<h1 class="project-text-title">GOT </h1>
+				<p class="project-text-small">PHP / Laravel</p>
+			</div>
 		</div>
 	</div>
 
-	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js" integrity="sha512-Gx/C4x1qubng2MWpJIxTPuWch9O88dhFFfpIl3WlqH0jPHtCiNdYsmJBFX0q5gIzFHmwkPzzYTlZC/Q7zgbwCw==" crossorigin="anonymous"></script>
+
+	<script>
+		new fullpage('#fullPage', {
+			autoScrolling:true,
+		});
+
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

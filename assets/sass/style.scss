@@ -28,11 +28,25 @@ $grey: #8D8D8D;
 // General
 .navbar {
 	&.navbar-expand-lg {
+		transition: 0.4s;
 		background-color: transparent !important;
+
+		&:hover {
+			background-color: white !important;
+		}
 	}
 
 	&-toggler {
 		border: none !important;
+	}
+
+	&-logo {
+		height: 30px;
+		width: auto;
+	}
+
+	&-nav {
+		line-height: 4rem;
 	}
 }
 
@@ -43,6 +57,40 @@ $grey: #8D8D8D;
 		text-align: center;
 	}
 }
+
+/* .links {
+	display: flex;
+	position: fixed;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+	padding: 2rem;
+}
+
+.link-item {
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	color: $grey;
+	transition: 0.2s;
+
+	&:hover {
+		text-decoration: none;
+		color: $black;
+	}
+
+	&.active {
+		color: $black;
+	}
+
+	&.right {
+		writing-mode: sideways-rl;
+	}
+
+	&.left {
+		writing-mode: sideways-lr;
+	}
+} */
 
 
 // About
@@ -114,6 +162,45 @@ $grey: #8D8D8D;
 }
 
 // Work
+.section{
+	position: relative;
+	text-align: center;
+}
+
+.project {
+	position: relative;
+	
+	&-image {
+		width: 100%;
+		max-width: 600px;
+		position: relative;
+		border: 1px solid lavender;
+		margin: 100px 0;
+
+		/* &:hover {
+			
+		} */
+	}
+
+	&-text {
+		text-align: left;
+		position: absolute;
+		top: 50%;
+		left: 25%;
+		transform: translate(-50%, -50%);
+
+		&-title {
+			font-family: 'Playfair Display', serif;
+			font-size: 70px;
+		}
+
+		&-small {
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+	}
+}
+
 
 
 /*
@@ -167,6 +254,7 @@ $grey: #8D8D8D;
 	.header-title-left, .header-title-right  {
 		font-size: 80px;
 	}
+
 }
 
 // Large devices (desktops, less than 1200px)
