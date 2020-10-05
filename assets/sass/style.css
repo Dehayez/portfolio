@@ -93,6 +93,7 @@
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
 }
 
 .segment-right {
@@ -100,7 +101,7 @@
 }
 
 .segment-right-text {
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom: 2rem;
 }
 
@@ -120,11 +121,32 @@
 }
 
 .skills {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 300;
   list-style-type: none;
   line-height: 3rem;
   padding-left: 0;
+}
+
+.links {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 2rem 0;
+}
+
+.link-item {
+  margin-right: 2rem;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #333333;
+}
+
+.link-item:hover {
+  color: black;
+  text-decoration: none;
 }
 
 .section {
@@ -213,6 +235,8 @@
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    /* &-image {
+		} */
   }
   .project-text {
     position: relative;

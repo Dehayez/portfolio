@@ -28,7 +28,6 @@ $grey: #8D8D8D;
 
 // General
 .navbar {
-	
 
 	&.navbar-expand-lg {
 		transition: 0.4s;
@@ -96,12 +95,14 @@ $grey: #8D8D8D;
 		font-size: 22px;
 		font-weight: 700;
 		margin-bottom: 2rem;
+		font-family: 'Playfair Display', serif;
+
 	}
 
 	&-right {
 		margin-bottom: 8rem;
 		&-text {
-			font-size: 18px;
+			font-size: 1rem;
 			margin-bottom: 2rem;
 			
 			&.title {
@@ -124,14 +125,31 @@ $grey: #8D8D8D;
 
 
 .skills {
-	font-size: 18px;
+	font-size: 1rem;
 	font-weight: 300;
 	list-style-type: none;
 	line-height: 3rem;
 	padding-left: 0;
 }
 
+.links {
+	list-style-type: none;
+	display: flex;
+	margin: 2rem 0;
+}
 
+.link-item {
+	margin-right: 2rem;
+	text-decoration: underline;
+	font-size: 1rem;
+	font-weight: 300;
+	color: #333333;
+
+	&:hover {
+		color: black;
+		text-decoration: none;
+	}
+}
 
 // Work
 .section{
@@ -164,6 +182,7 @@ $grey: #8D8D8D;
 			height: 100px;
 		}
 	}
+
 
 	&-text {
 		position: absolute;
@@ -252,8 +271,8 @@ $grey: #8D8D8D;
 			margin-bottom: 1rem;
 		}
 
-		&-image {
-		}
+		/* &-image {
+		} */
 	}
 
 	.navbar {
