@@ -89,15 +89,15 @@
   text-align: right;
 }
 
+.segment {
+  margin: 4rem 0;
+}
+
 .segment-left {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 2rem;
   font-family: 'Playfair Display', serif;
-}
-
-.segment-right {
-  margin-bottom: 8rem;
 }
 
 .segment-right-text {
@@ -124,7 +124,7 @@
   font-size: 1rem;
   font-weight: 300;
   list-style-type: none;
-  line-height: 3rem;
+  line-height: rem;
   padding-left: 0;
 }
 
@@ -182,7 +182,7 @@
 
 .project-text {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: -5rem;
   text-align: left;
 }
@@ -212,6 +212,18 @@
 /*
 * Responsive breakpoints
 */
+@media (min-width: 576px) {
+  .project-image {
+    max-width: 95vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-image {
+    max-width: 70vw;
+  }
+}
+
 @media (min-width: 992px) {
   .navbar.navbar-expand-lg {
     background-color: transparent !important;
@@ -222,6 +234,12 @@
   }
   .navbar-nav {
     margin-left: auto !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-image {
+    max-width: 1000px;
   }
 }
 

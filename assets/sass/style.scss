@@ -91,6 +91,7 @@ $grey: #8D8D8D;
 }
 
 .segment {
+	margin: 4rem 0;
 	&-left {
 		font-size: 22px;
 		font-weight: 700;
@@ -100,7 +101,6 @@ $grey: #8D8D8D;
 	}
 
 	&-right {
-		margin-bottom: 8rem;
 		&-text {
 			font-size: 1rem;
 			margin-bottom: 2rem;
@@ -128,7 +128,7 @@ $grey: #8D8D8D;
 	font-size: 1rem;
 	font-weight: 300;
 	list-style-type: none;
-	line-height: 3rem;
+	line-height: rem;
 	padding-left: 0;
 }
 
@@ -186,7 +186,7 @@ $grey: #8D8D8D;
 
 	&-text {
 		position: absolute;
-		top: 35%;
+		top: 40%;
 		left: -5rem;
 		text-align: left;
 
@@ -214,12 +214,16 @@ $grey: #8D8D8D;
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
-
+	.project-image {
+		max-width: 95vw;
+	}
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
-
+	.project-image {
+		max-width: 70vw;
+	}
 }
 
 // Large devices (desktops, 992px and up)
@@ -242,7 +246,9 @@ $grey: #8D8D8D;
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { 
-
+	.project-image {
+		max-width: 1000px;
+	}
 }
 
 
