@@ -39,7 +39,7 @@
 
 .navbar-nav {
   line-height: 4rem;
-  background-color: white;
+  background-color: transparent;
 }
 
 .nav-link {
@@ -56,9 +56,9 @@
 }
 
 .socials-logo {
-  height: 40px;
+  height: 30px;
   margin-right: 1rem;
-  opacity: 0.7;
+  opacity: 0.9;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -294,7 +294,7 @@
     margin-bottom: 1rem;
   }
   .navbar-collapse {
-    height: 88vh;
+    height: 94vh;
     width: 100vw;
     background-color: white;
     -webkit-transition: 0.6s;
