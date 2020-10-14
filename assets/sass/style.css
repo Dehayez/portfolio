@@ -48,6 +48,30 @@
   text-align: center;
 }
 
+.socials {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 2rem;
+}
+
+.socials-logo {
+  height: 40px;
+  margin-right: 1rem;
+  opacity: 0.7;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.socials-logo:hover {
+  opacity: 1;
+}
+
+.socials-logo.linkedin {
+  color: red;
+  fill: red;
+}
+
 .header {
   background-color: white;
   height: 100vh;

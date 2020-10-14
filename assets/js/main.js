@@ -7,4 +7,4 @@ new fullpage('#fullPage', {
 	showActiveTooltip: true */
 	scrollingSpeed: 1000, 
 });
-
+ScrollReveal().reveal('.segment' , { delay: 500 })
