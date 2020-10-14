@@ -187,6 +187,8 @@ $grey: #8D8D8D;
 		max-width: 600px;
 		position: relative;
 		object-fit: cover;
+		height: 65vh;
+		width: 80vw;
 
 		-webkit-box-shadow: 10px 10px 28px 1px rgba(0,0,0,0.04);
 		-moz-box-shadow: 10px 10px 28px 1px rgba(0,0,0,0.04);
@@ -197,6 +199,7 @@ $grey: #8D8D8D;
 			-webkit-box-shadow: 10px 10px 28px 1px rgba(0,0,0,0.1);
 			-moz-box-shadow: 10px 10px 28px 1px rgba(0,0,0,0.1);
 			box-shadow: 10px 10px 28px 1px rgba(0,0,0,0.1);
+			cursor: pointer;
 		}
 
 		&-inside {
@@ -289,6 +292,10 @@ $grey: #8D8D8D;
 		position: relative;
 		display: flex !important;
 		flex-direction: column-reverse;
+
+		&-image {
+			height: auto;
+		}
 
 		&-text {
 			position: relative;

@@ -189,6 +189,8 @@
   position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 65vh;
+  width: 80vw;
   -webkit-box-shadow: 10px 10px 28px 1px rgba(0, 0, 0, 0.04);
   box-shadow: 10px 10px 28px 1px rgba(0, 0, 0, 0.04);
   -webkit-transition: 0.4s;
@@ -198,6 +200,7 @@
 .project-image:hover {
   -webkit-box-shadow: 10px 10px 28px 1px rgba(0, 0, 0, 0.1);
   box-shadow: 10px 10px 28px 1px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
 .project-image-inside {
@@ -279,6 +282,9 @@
             flex-direction: column-reverse;
     /* &-image {
 		} */
+  }
+  .project-image {
+    height: auto;
   }
   .project-text {
     position: relative;
