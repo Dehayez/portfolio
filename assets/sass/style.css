@@ -268,6 +268,19 @@
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .overlay-text {
@@ -291,12 +304,35 @@
   opacity: 0.8;
 }
 
-.project:hover .project-image {
-  opacity: 0.1;
+.logo-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.project:hover .overlay {
-  opacity: 1;
+.logo-icon {
+  height: 1.9rem;
+  width: auto;
+  font-size: 1.5rem;
+  opacity: 0.4;
+}
+
+.logo-icon:hover {
+  opacity: 0.9;
+}
+
+.logo-icon.adobe {
+  margin-top: -6px;
 }
 
 .fp-tableCell {
@@ -340,7 +376,13 @@
   .project-description {
     display: none;
   }
-  .overlay-link {
+  .project:hover .project-image {
+    opacity: 0.1;
+  }
+  .project:hover .overlay {
+    opacity: 1;
+  }
+  .logo-links.mobile {
     display: none;
   }
 }
