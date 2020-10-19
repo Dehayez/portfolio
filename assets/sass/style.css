@@ -292,7 +292,7 @@
 }
 
 .project:hover .project-image {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 .project:hover .overlay {
@@ -338,6 +338,9 @@
     margin-left: auto !important;
   }
   .project-description {
+    display: none;
+  }
+  .overlay-link {
     display: none;
   }
 }
