@@ -5,6 +5,7 @@ new fullpage('#fullPage', {
 	/* anchors: ['section1', 'setion2', 'section3', 'section4', 'section5'],
 	navigationTooltips: ['Home', 'Ecospin', 'GOT', 'YouAreIt', 'Buddy'],
 	showActiveTooltip: true */
-	scrollingSpeed: 1000, 
+	scrollingSpeed: 1500, 
 });
-ScrollReveal().reveal('.segment' , { delay: 500 })
+
+ScrollReveal().reveal('.reveal' , { delay: 200 });
