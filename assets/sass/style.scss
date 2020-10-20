@@ -91,7 +91,8 @@ $grey: #8D8D8D;
 
 	&-image {
 		height: 60vh;
-		position: absolute;
+		position: relative;
+		opacity: 0.9 !important;
 	}
 
 	&-title {
@@ -100,6 +101,8 @@ $grey: #8D8D8D;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		z-index: 10;
+		position: absolute;
 
 		&-left {
 			font-size: calc(40px + 1.5vw);
@@ -390,6 +393,9 @@ $grey: #8D8D8D;
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) { 
 
+	.header-image {
+		display: none;
+	}
 }
 
 // Medium devices (tablets, less than 992px)
@@ -848,6 +854,29 @@ $grey: #8D8D8D;
 			  transform: scale(1);
 	  -webkit-animation-timing-function: ease-out;
 			  animation-timing-function: ease-out;
+	}
+  }
+  
+
+  .fade-in {
+	-webkit-animation: fade-in 0.4s cubic-bezier(0.600, 0.040, 0.980, 0.335) 1.4s both;
+	        animation: fade-in 0.4s cubic-bezier(0.600, 0.040, 0.980, 0.335) 1.4s both;
+}
+
+ @-webkit-keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  @keyframes fade-in {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
 	}
   }
   
